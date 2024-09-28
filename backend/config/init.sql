@@ -7,6 +7,7 @@ CREATE TABLE theatre (
 CREATE TABLE screen (
     id SERIAL PRIMARY KEY,
     screen_number INT NOT NULL,
+    total_seats INT NOT NULL DEFAULT 0,
     theatre_id INT REFERENCES theatre(id) ON DELETE CASCADE
 ); 
 
