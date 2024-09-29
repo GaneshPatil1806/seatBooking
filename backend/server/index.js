@@ -10,6 +10,7 @@ app.use(cors());
 
 // Routes
 app.use('/api/theatre', require('../routes/theatreRoutes'));
+app.use('/api/movie', require('../routes/movieRoutes'));
 
 app.get('/ram', (req, res) => {
     res.send('Hello');

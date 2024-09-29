@@ -21,7 +21,7 @@ CREATE TABLE "user" (
 CREATE TABLE movie (
     id SERIAL PRIMARY KEY,
     movie_name VARCHAR(100),
-    duration INT NOT NULL
+    duration FLOAT NOT NULL
 );
 
 CREATE TABLE seat (
